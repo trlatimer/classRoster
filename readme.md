@@ -15,7 +15,7 @@ The following objectives were provided by the instructor and the project was com
   3. Define an enumerated data type Degree for the degree programs containing the following data elements SECURITY, NETWORKING and SOFTWARE.
     Note: This information should be included in the degree.h file.
   4. For the Student class, do the following:
-    A. Create the base class Student in the files student.h and student.cpp, which includes each the following variables:
+    - Create the base class Student in the files student.h and student.cpp, which includes each the following variables:
       - student ID
       - first name
       - last name
@@ -24,7 +24,7 @@ The following objectives were provided by the instructor and the project was com
       - array of number of days to complete each course
       - degree types
       Note: Degree type should be populated in subclasses only.
-    B. Create each of the following functions in the Student class:
+    - Create each of the following functions in the Student class:
       - an accessor (i.e., getter) for each instance variable from part D1
       - a mutator (i.e., setter) for each instance variable from part D1
       Note: All access and changes to the instance variables of the Student class should be done through the accessor and mutator functions.
@@ -33,17 +33,17 @@ The following objectives were provided by the instructor and the project was com
       - destructor
       - virtual getDegreeProgram()
       Note: Leave the implementation of the getDegreeProgram() function empty.
-    C. Create the three following classes as subclasses of Student, using the files created in part B:
+    - Create the three following classes as subclasses of Student, using the files created in part B:
       - SecurityStudent
       - NetworkStudent
       - SoftwareStudent
       Each subclass should override the getDegreeProgram() function. Each subclass should have a data member to hold the enumerated type for the degree program using the types defined in part C.
   5. Create a Roster class (roster.cpp) by doing the following:
-    A. Create an array of pointers, classRosterArray, to hold the data provided in the studentData table.
-    B. Create a student object for each student in the data table by using the subclasses NetworkStudent, SecurityStudent, and SoftwareStudent, and populate classRosterArray.
+    - Create an array of pointers, classRosterArray, to hold the data provided in the studentData table.
+    - Create a student object for each student in the data table by using the subclasses NetworkStudent, SecurityStudent, and SoftwareStudent, and populate classRosterArray.
       - Apply pointer operations when parsing each set of data identified in the studentData table.
       - Add each student object to classRosterArray.
-    C. Define the following functions:
+    - Define the following functions:
       - public void add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, <degree program>) that sets the instance variables from part D1 and updates the roster
       - public void remove(string studentID) that removes students from the roster by student ID. If the student ID does not exist, the function prints an error message indicating that the student was not found.
       - public void printAll() that prints a complete tab-separated list of student data using accessor functions with the provided format: 1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security. The printAll() function should loop through all the students in classRosterArray and call the print() function for each student.
@@ -52,10 +52,10 @@ The following objectives were provided by the instructor and the project was com
         Note: A valid email should include an at sign ('@') and period ('.') and should not include a space (' ').
       - public void printByDegreeProgram(int degreeProgram) that prints out student information for a degree program specified by an enumerated type
    6. Demonstrate the program’s required functionality by adding a void main() function to roster.cpp, which will contain the required function calls to achieve the following results:
-    A. Print out to the screen, via your application, the course title, the programming language used, your student ID, and your name.
-    B. Create an instance of the Roster class called classRoster.
-    C. Add each student to classRoster.
-    D. Convert the following pseudo code to complete the rest of the main() function:
+    - Print out to the screen, via your application, the course title, the programming language used, your student ID, and your name.
+    - Create an instance of the Roster class called classRoster.
+    - Add each student to classRoster.
+    - Convert the following pseudo code to complete the rest of the main() function:
       classRoster.printAll();
       classRoster.printInvalidEmails();
       //loop through classRosterArray and for each element:
@@ -64,7 +64,7 @@ The following objectives were provided by the instructor and the project was com
       classRoster.remove("A3");
       classRoster.remove("A3");
       //expected: the above line should print a message saying such a student with this ID was not found.
-    E. Call the destructor to release the Roster memory.
+    - Call the destructor to release the Roster memory.
 
 ## TO VIEW:
 In order to view the project, you will need to follow the steps below:
